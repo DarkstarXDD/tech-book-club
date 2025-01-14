@@ -1,6 +1,6 @@
 @font-face {
   src: url("/fonts/MartianMono-VariableFont_wdth_wght.woff2");
-  font-family: "Martian Mono";
+  font-family: "Martian-Mono";
   font-weight: 100 800;
 }
 
@@ -20,7 +20,7 @@
 }
 
 *:focus-visible {
-  outline: 0.125rem dotted green;
+  outline: 0.125rem solid var(--clr-neutral-700);
   outline-offset: 0.125rem;
 }
 
@@ -47,8 +47,8 @@ a {
 button {
   cursor: pointer;
 }
-/* ------------------- End of CSS Reset ------------------- */
 
+/* ------------------- Design Tokens ------------------- */
 :root {
   --ff-martian-mono: "Martian-Mono", monospace;
   --ff-inter: "Inter", sans-serif;
@@ -87,4 +87,59 @@ button {
 
   --clr-gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
   --clr-gradient-text: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+}
+/* ------------------- End of Design Tokens ------------------- */
+
+body {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-regular);
+  line-height: var(--line-height-140);
+  /* letter-spacing: var(--letter-spacing-normal); */
+  color: var(--clr-neutral-700);
+}
+
+.header-main-wrapper {
+  max-width: 73.125rem;
+  display: grid;
+  gap: 3rem;
+  padding: 1.5rem 1rem;
+}
+
+.header-logo {
+  display: block;
+  max-width: 12rem;
+}
+
+.hero-heading {
+  font-family: var(--ff-martian-mono);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--line-height-120);
+  letter-spacing: var(--letter-spacing-tighter);
+  color: transparent;
+  background: var(--clr-gradient-text);
+  background-clip: text;
+}
+
+.hero-text {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .header-main-wrapper {
+    gap: 4rem;
+    padding: 2rem 2rem;
+  }
+
+  .hero-heading {
+    font-size: var(--fs-5xl);
+  }
+}
+
+/* Call the below media query bit more early, test and find a good value */
+@media (min-width: 90rem) {
+  .header-main-wrapper {
+    gap: 5rem;
+  }
 }
