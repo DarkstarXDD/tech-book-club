@@ -9,8 +9,8 @@ export default {
     },
 
     fontFamily: {
-      "martian-mono": ["Martian-Mono", "monospace"],
-      inter: ["Inter", "sans-serif"],
+      inter: ["var(--font-inter)", "sans-serif"],
+      "martian-mono": ["var(--font-martian-mono)", "monospace"],
     },
 
     fontSize: {

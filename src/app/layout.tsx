@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Inter, Martian_Mono } from "next/font/google"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -29,6 +30,18 @@ export const metadata: Metadata = {
   },
 }
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
+
+const martian_mono = Martian_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-martian-mono",
+})
+
 export default function RootLayout({
   children,
 }: {
@@ -36,7 +49,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={`${inter.variable} ${martian_mono.variable} font-martian-mono`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
