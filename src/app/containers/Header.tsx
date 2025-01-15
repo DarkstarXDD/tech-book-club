@@ -5,7 +5,11 @@ import logo from "@/app/assets/images/logo.svg"
 export default function Header() {
   return (
     <header>
-      <Link href="/" aria-label="tech book club - home">
+      <Link
+        href="/"
+        aria-label="tech book club - home"
+        className="block max-w-48 outline-neutral-700"
+      >
         <Image src={logo} alt="Tech book club" />
       </Link>
     </header>
