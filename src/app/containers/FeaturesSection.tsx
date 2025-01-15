@@ -41,7 +41,7 @@ export default function FeaturesSection() {
       <Image
         src={featuresImage}
         alt="people seated in a circle happily reading books"
-        className="rounded-md"
+        className="rounded-2xl"
       ></Image>
     </section>
   )

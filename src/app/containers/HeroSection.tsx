@@ -39,7 +39,7 @@ export default function HeroSection() {
       <Image
         src={hero}
         alt="Three people looking at the contents of a book inside a library."
-        className="rounded-md"
+        className="rounded-2xl"
       />
     </section>
   )
