@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${martian_mono.variable} font-martian-mono`}
+        className={`${inter.variable} ${martian_mono.variable} font-inter text-lg font-normal leading-normal tracking-normal text-neutral-700`}
       >
         {children}
       </body>
