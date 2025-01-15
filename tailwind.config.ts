@@ -14,7 +14,8 @@ export default {
     },
 
     fontSize: {
-      sm: "0.875rem",
+      xs: "0.875rem",
+      sm: "1rem",
       md: "1.125rem",
       lg: "1.25rem",
       xl: "1.5rem",
@@ -31,8 +32,8 @@ export default {
     },
 
     lineHeight: {
-      tight: "1.1",
-      tighter: "1.2",
+      tighter: "1.1",
+      tight: "1.2",
       snug: "1.3",
       normal: "1.4",
     },
@@ -44,6 +45,7 @@ export default {
     },
 
     colors: {
+      transparent: "transparent",
       neutral: {
         0: "hsl(0, 0%, 100%)",
         100: "hsl(17, 41%, 97%)",
@@ -52,17 +54,19 @@ export default {
         900: "hsl(194, 78%, 11%)",
       },
 
-      salmon: {
+      "light-salmon": {
         50: "hsl(22, 100%, 97%)",
         100: "hsl(22, 100%, 91%)",
         500: "hsl(22, 99%, 72%)",
       },
     },
 
-    backgroundImage: {
-      gradient: "linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%)",
-      "gradient-text":
-        "linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%)",
+    extend: {
+      backgroundImage: {
+        gradient: "linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%)",
+        "gradient-text":
+          "linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%)",
+      },
     },
   },
   plugins: [],
