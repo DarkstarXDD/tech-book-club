@@ -20,7 +20,7 @@ export default function Footer() {
             Review Membership Options
           </Button>
 
-          <div className="grid grid-cols-[1fr_auto] items-center justify-items-start gap-x-3 gap-y-1 justify-self-center">
+          <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
             <Image src={avatars} alt="" className="row-span-2 max-w-28" />
             <div className="flex items-center justify-center">
               <Star />
