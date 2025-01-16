@@ -9,7 +9,7 @@ import avatars from "@/app/assets/images/image-avatars.webp"
 
 export default function Footer() {
   return (
-    <footer className="justify-items-center rounded-t-2xl bg-neutral-900 bg-[url('/pattern-dark-bg.svg')] px-4 pt-12 text-neutral-100 md:px-8 md:pt-16 lg:pt-20">
+    <footer className="w-full justify-items-center rounded-t-2xl bg-neutral-900 bg-[url('/pattern-dark-bg.svg')] px-4 pt-12 text-neutral-100 md:px-8 md:pt-16 lg:pt-20">
       <div className="grid max-w-[48rem] justify-items-center gap-10">
         <p className="text-center font-martian-mono text-2xl font-semibold leading-snug tracking-tighter md:text-4xl">
           Ready to debug your reading list?
