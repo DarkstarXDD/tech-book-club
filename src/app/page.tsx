@@ -1,10 +1,10 @@
-import Header from "./containers/Header"
-import HeroSection from "./containers/HeroSection"
-import FeaturesSection from "./containers/FeaturesSection"
-import CommunitySection from "./containers/CommunitySection"
-import PricingSection from "./containers/PricingSection"
-import TestimonialSection from "./containers/TestimonialSection"
-import Footer from "./containers/Footer"
+import Header from "../containers/Header"
+import HeroSection from "@/containers/HeroSection"
+import FeaturesSection from "@/containers/FeaturesSection"
+import CommunitySection from "@/containers/CommunitySection"
+import PricingSection from "@/containers/PricingSection"
+import TestimonialSection from "@/containers/TestimonialSection"
+import Footer from "@/containers/Footer"
 
 // import bgPatternLight from "@/app/assets/images/pattern-light-bg.svg"
 

@@ -1,9 +1,9 @@
 import Image from "next/image"
-import Button from "../components/Button"
-import Star from "../components/Star"
+import Button from "@/components/Button"
+import Star from "@/components/Star"
 
-import avatars from "@/app/assets/images/image-avatars.webp"
-import hero from "@/app/assets/images/image-hero-desktop.webp"
+import avatars from "@/assets/images/image-avatars.webp"
+import hero from "@/assets/images/image-hero-desktop.webp"
 
 export default function HeroSection() {
   return (

@@ -2,10 +2,10 @@ import Image from "next/image"
 import { FaBluesky } from "react-icons/fa6"
 import { FaLinkedin } from "react-icons/fa"
 
-import Button from "../components/Button"
-import Star from "../components/Star"
+import Button from "@/components/Button"
+import Star from "@/components/Star"
 
-import avatars from "@/app/assets/images/image-avatars.webp"
+import avatars from "@/assets/images/image-avatars.webp"
 
 export default function Footer() {
   return (

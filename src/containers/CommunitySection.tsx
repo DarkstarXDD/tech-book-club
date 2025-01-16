@@ -1,5 +1,5 @@
 import Image from "next/image"
-import communityImage from "@/app/assets/images/image-not-average-desktop.webp"
+import communityImage from "@/assets/images/image-not-average-desktop.webp"
 
 export default function CommunitySection() {
   return (

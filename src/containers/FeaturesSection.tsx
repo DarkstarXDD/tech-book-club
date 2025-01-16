@@ -1,7 +1,7 @@
 import Image from "next/image"
-import CheckboxIcon from "../components/CheckboxIcon"
+import CheckboxIcon from "@/components/CheckboxIcon"
 
-import featuresImage from "@/app/assets/images/image-read-together-desktop.webp"
+import featuresImage from "@/assets/images/image-read-together-desktop.webp"
 
 export default function FeaturesSection() {
   return (
