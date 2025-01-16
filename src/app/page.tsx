@@ -4,6 +4,7 @@ import FeaturesSection from "./containers/FeaturesSection"
 import CommunitySection from "./containers/CommunitySection"
 import PricingSection from "./containers/PricingSection"
 import TestimonialSection from "./containers/TestimonialSection"
+import Footer from "./containers/Footer"
 
 // import bgPatternLight from "@/app/assets/images/pattern-light-bg.svg"
 
@@ -20,6 +21,7 @@ export default function Home() {
           <TestimonialSection />
         </main>
       </div>
+      <Footer />
     </>
   )
 }

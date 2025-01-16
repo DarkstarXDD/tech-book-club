@@ -22,6 +22,7 @@ export default function HeroSection() {
             Review Membership Options
           </Button>
         </div>
+
         <div className="mt-5 grid grid-cols-[1fr_auto] items-center justify-items-start gap-x-3 gap-y-1">
           <Image src={avatars} alt="" className="row-span-2 max-w-28" />
           <div className="flex items-center justify-center">
@@ -36,6 +37,7 @@ export default function HeroSection() {
           </p>
         </div>
       </div>
+
       <Image
         src={hero}
         alt="Three people looking at the contents of a book inside a library."
