@@ -1,19 +1,28 @@
+import { twMerge } from "tailwind-merge"
+
 import CheckboxIcon from "./CheckboxIcon"
 import Button from "./Button"
 
 export default function PriceCard({
+  className,
   planName,
   monthlyPrice,
   benefits,
   buttonText = "Subscribe Now",
 }: {
+  className?: string
   planName: string
   monthlyPrice: number | string
   benefits: string[]
   buttonText?: string
 }) {
   return (
-    <div className="grid gap-8 rounded-lg border border-neutral-200 p-6">
+    <div
+      className={twMerge(
+        "grid gap-8 rounded-lg border border-neutral-200 p-6",
+        className
+      )}
+    >
       <div className="grid gap-6">
         <h3 className="font-martian-mono text-xl font-semibold leading-tighter tracking-tight text-neutral-900">
           {planName}
