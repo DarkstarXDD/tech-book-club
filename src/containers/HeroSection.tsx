@@ -7,7 +7,7 @@ import hero from "@/assets/images/image-hero-desktop.webp"
 
 export default function HeroSection() {
   return (
-    <section className="grid gap-16 pb-20 lg:grid-cols-[auto_1fr] lg:items-center">
+    <section className="grid w-full gap-16 pb-20 lg:grid-cols-[auto_1fr] lg:items-center">
       <div className="grid max-w-[43rem] gap-8 lg:max-w-[36rem]">
         <div className="grid gap-6">
           <h1 className="bg-gradient-text bg-clip-text font-martian-mono text-3xl font-bold leading-tight tracking-tighter text-transparent md:text-5xl">
@@ -44,7 +44,7 @@ export default function HeroSection() {
       <Image
         src={hero}
         alt="Three people looking at the contents of a book inside a library."
-        className="justify-self-center rounded-2xl"
+        className="rounded-2xl max-lg:w-[40rem]"
       />
     </section>
   )

@@ -5,7 +5,8 @@ export default {
   theme: {
     screens: {
       md: "48rem",
-      lg: "90rem", // Change later after testing
+      // lg: "90rem",
+      lg: "64rem",
     },
 
     fontFamily: {

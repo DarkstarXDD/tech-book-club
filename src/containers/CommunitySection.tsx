@@ -3,7 +3,7 @@ import communityImage from "@/assets/images/image-not-average-desktop.webp"
 
 export default function CommunitySection() {
   return (
-    <section className="grid items-center gap-10 lg:grid-cols-[auto_1fr] lg:gap-20">
+    <section className="grid w-full gap-10 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-20">
       <div className="grid gap-6 lg:max-w-[34rem]">
         <h2 className="font-martian-mono text-2xl font-semibold leading-snug tracking-tighter text-neutral-900 md:max-w-[34rem] md:text-4xl">
           Not your average book club
@@ -20,7 +20,7 @@ export default function CommunitySection() {
       <Image
         src={communityImage}
         alt="Old man and two women readings books in a library."
-        className="rounded-2xl"
+        className="rounded-2xl max-lg:w-[40rem]"
       ></Image>
     </section>
   )
