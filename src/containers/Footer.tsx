@@ -40,8 +40,12 @@ export default function Footer() {
             © 2024 - Tech Book Club
           </p>
           <div className="flex items-center justify-center gap-6">
-            <FaBluesky size="1.375rem" />
-            <FaLinkedin size="1.375rem" />
+            <a href="https://bsky.app/" className="outline-neutral-100">
+              <FaBluesky size="1.375rem" />
+            </a>
+            <a href="https://www.linkedin.com/" className="outline-neutral-100">
+              <FaLinkedin size="1.375rem" />
+            </a>
           </div>
         </div>
       </div>
