@@ -10,16 +10,18 @@ import Footer from "@/containers/Footer"
 
 export default function Home() {
   return (
-    <div className="grid justify-items-center gap-16 px-4 pt-6 md:gap-20 md:px-8 md:pt-8 lg:gap-[7.5rem]">
-      <div className="grid max-w-[73.125rem] gap-12">
-        <Header />
-        <main className="grid gap-16 md:gap-20 lg:gap-[7.5rem]">
-          <HeroSection />
-          <FeaturesSection />
-          <CommunitySection />
-          <PricingSection />
-          <TestimonialSection />
-        </main>
+    <div className="grid justify-items-center gap-16 md:gap-20 lg:gap-[7.5rem]">
+      <div className="px-4 pt-6 md:px-8 md:pt-8">
+        <div className="grid max-w-[34rem] gap-12 md:max-w-[73.125rem] md:gap-16 lg:gap-20">
+          <Header />
+          <main className="grid justify-items-center gap-16 md:gap-20 lg:gap-[7.5rem]">
+            <HeroSection />
+            <FeaturesSection />
+            <CommunitySection />
+            <PricingSection />
+            <TestimonialSection />
+          </main>
+        </div>
       </div>
       <Footer />
     </div>

@@ -8,7 +8,7 @@ export default function FeaturesSection() {
     <section className="grid items-center gap-10 lg:grid-cols-[1fr_auto] lg:gap-20">
       <div className="lg:col-start-2 lg:max-w-[34rem]">
         <div className="grid gap-6 md:gap-[2.125rem]">
-          <h2 className="max-w-[32rem] font-martian-mono text-2xl font-semibold leading-snug tracking-tighter text-neutral-900 md:text-4xl">
+          <h2 className="font-martian-mono text-2xl font-semibold leading-snug tracking-tighter text-neutral-900 md:max-w-[32rem] md:text-4xl">
             Read together, grow together
           </h2>
           <ul className="grid gap-4 md:gap-6">

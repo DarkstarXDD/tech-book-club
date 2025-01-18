@@ -2,7 +2,7 @@ import Star from "@/components/Star"
 
 export default function TestimonialSection() {
   return (
-    <section className="grid justify-items-start gap-8 lg:justify-items-center">
+    <section className="grid max-w-[60.625rem] justify-items-start gap-8 lg:justify-items-center">
       <div className="flex items-center justify-center">
         <Star />
         <Star />
