@@ -1,7 +1,7 @@
 import type { ComponentProps } from "react"
 import { tv, type VariantProps } from "tailwind-variants"
 
-const buttonStyles = tv({
+export const buttonStyles = tv({
   base: "flex flex-wrap items-center justify-center gap-3 rounded-lg border-2 px-6 py-5 font-martian-mono text-sm font-semibold leading-snug tracking-tight hover:bg-gradient-to-r active:opacity-80 md:text-md",
   variants: {
     variant: {

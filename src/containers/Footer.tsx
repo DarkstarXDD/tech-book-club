@@ -2,7 +2,7 @@ import Image from "next/image"
 import { FaBluesky } from "react-icons/fa6"
 import { FaLinkedin } from "react-icons/fa"
 
-import Button from "@/components/Button"
+import LinkStyled from "@/components/LinkStyled"
 import Star from "@/components/Star"
 import IconArrowUp from "@/components/IconArrowUp"
 
@@ -17,10 +17,15 @@ export default function Footer() {
             Ready to debug your reading list?
           </p>
           <div className="grid max-w-[25rem] gap-6">
-            <Button variant="alternate" uppercase className="group">
+            <LinkStyled
+              href="#membership-options"
+              variant="alternate"
+              uppercase
+              className="group"
+            >
               Review Membership Options
               <IconArrowUp className="shrink-0 motion-safe:group-hover:animate-bounce" />
-            </Button>
+            </LinkStyled>
             <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
               <Image src={avatars} alt="" className="row-span-2 max-w-28" />
               <div className="flex items-center justify-center">

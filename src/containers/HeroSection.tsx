@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Button from "@/components/Button"
+import LinkStyled from "@/components/LinkStyled"
 import Star from "@/components/Star"
 import IconArrowDown from "@/components/IconArrowDown"
 
@@ -22,10 +22,15 @@ export default function HeroSection() {
         </div>
 
         <div className="grid max-w-[25rem] gap-5">
-          <Button variant="primary" uppercase className="group">
+          <LinkStyled
+            href="#membership-options"
+            variant="primary"
+            uppercase
+            className="group"
+          >
             Review Membership Options
             <IconArrowDown className="shrink-0 motion-safe:group-hover:animate-bounce" />
-          </Button>
+          </LinkStyled>
 
           <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
             <Image src={avatars} alt="" className="row-span-2 max-w-28" />
