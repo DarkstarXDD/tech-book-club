@@ -44,7 +44,7 @@ export default function Footer() {
         <hr className="mt-16 h-[0.0625rem] w-full border-none bg-neutral-700" />
         <div className="flex w-full flex-col items-center justify-center gap-4 py-6 md:flex-row md:justify-between">
           <p className="font-martian-mono text-xs font-normal leading-tight tracking-tight">
-            © 2024 - Tech Book Club
+            © {new Date().getFullYear()} - Tech Book Club
           </p>
           <div className="flex items-center justify-center gap-6">
             <a href="https://bsky.app/" className="outline-neutral-100">
