@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa"
 
 import Button from "@/components/Button"
 import Star from "@/components/Star"
+import IconArrowUp from "@/components/IconArrowUp"
 
 import avatars from "@/assets/images/image-avatars.webp"
 
@@ -16,8 +17,9 @@ export default function Footer() {
             Ready to debug your reading list?
           </p>
           <div className="grid max-w-[25rem] gap-6">
-            <Button variant="alternate" uppercase>
+            <Button variant="alternate" uppercase className="group">
               Review Membership Options
+              <IconArrowUp className="shrink-0 motion-safe:group-hover:animate-bounce" />
             </Button>
             <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
               <Image src={avatars} alt="" className="row-span-2 max-w-28" />

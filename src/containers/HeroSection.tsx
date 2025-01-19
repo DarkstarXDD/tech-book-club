@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Button from "@/components/Button"
 import Star from "@/components/Star"
+import IconArrowDown from "@/components/IconArrowDown"
 
 import avatars from "@/assets/images/image-avatars.webp"
 import hero from "@/assets/images/image-hero-desktop.webp"
@@ -21,8 +22,9 @@ export default function HeroSection() {
         </div>
 
         <div className="grid max-w-[25rem] gap-5">
-          <Button variant="primary" uppercase>
+          <Button variant="primary" uppercase className="group">
             Review Membership Options
+            <IconArrowDown className="shrink-0 motion-safe:group-hover:animate-bounce" />
           </Button>
 
           <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
