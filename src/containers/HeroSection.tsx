@@ -1,7 +1,7 @@
 import Image from "next/image"
 import LinkStyled from "@/components/LinkStyled"
-import Star from "@/components/Star"
-import IconArrowDown from "@/components/IconArrowDown"
+import StarIcon from "@/components/StarIcon"
+import ArrowDownIcon from "@/components/ArrowDownIcon"
 
 import avatars from "@/assets/images/image-avatars.webp"
 import hero from "@/assets/images/image-hero-desktop.webp"
@@ -29,17 +29,17 @@ export default function HeroSection() {
             className="group"
           >
             Review Membership Options
-            <IconArrowDown className="shrink-0 motion-safe:group-hover:animate-bounce" />
+            <ArrowDownIcon className="shrink-0 motion-safe:group-hover:animate-bounce" />
           </LinkStyled>
 
           <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
             <Image src={avatars} alt="" className="row-span-2 max-w-28" />
             <div className="flex items-center justify-center">
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-              <Star />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
             </div>
             <p className="col-start-2 font-martian-mono text-xs leading-tight tracking-tight">
               200+ developers joined already
