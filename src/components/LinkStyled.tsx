@@ -1,10 +1,25 @@
-// Called this LinkStyled to avoid name overlapping with built in Link component from Next.js
+import Link from "next/link"
 
 import type { ComponentProps } from "react"
-import { type VariantProps } from "tailwind-variants"
-import { buttonStyles as linkStyles } from "./Button"
+import { tv, type VariantProps } from "tailwind-variants"
 
-type LinkVariants = VariantProps<typeof linkStyles>
+const LinkStyles = tv({
+  base: "flex flex-wrap items-center justify-center gap-3 rounded-lg border-2 px-6 py-5 font-martian-mono text-sm font-semibold uppercase leading-snug tracking-tight hover:bg-gradient-to-r active:opacity-80 md:text-md",
+  variants: {
+    theme: {
+      primary:
+        "border-neutral-900 bg-light-salmon-50 text-neutral-900 outline-neutral-700 hover:from-light-salmon-100 hover:to-light-salmon-50",
+      alternate:
+        "border-neutral-0 bg-transparent text-neutral-0 outline-neutral-200 hover:from-neutral-700 hover:to-neutral-900",
+    },
+
+    uppercase: {
+      true: "uppercase",
+    },
+  },
+})
+
+type LinkVariants = VariantProps<typeof LinkStyles>
 
 type LinkProps = {
   href: string
@@ -17,17 +32,12 @@ export default function LinkStyled({
   href,
   children,
   className,
-  variant,
-  uppercase,
+  theme,
   ...props
 }: LinkProps) {
   return (
-    <a
-      href={href}
-      {...props}
-      className={linkStyles({ variant, uppercase, className })}
-    >
+    <Link href={href} {...props} className={LinkStyles({ theme, className })}>
       {children}
-    </a>
+    </Link>
   )
 }

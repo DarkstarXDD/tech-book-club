@@ -19,8 +19,7 @@ export default function Footer() {
           <div className="grid max-w-[25rem] gap-6">
             <LinkStyled
               href="#membership-options"
-              variant="alternate"
-              uppercase
+              theme="alternate"
               className="group"
             >
               Review Membership Options

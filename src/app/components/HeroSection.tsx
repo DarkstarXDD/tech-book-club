@@ -1,4 +1,5 @@
 import Image from "next/image"
+
 import LinkStyled from "@/components/LinkStyled"
 import StarIcon from "@/components/StarIcon"
 import ArrowDownIcon from "@/components/ArrowDownIcon"
@@ -24,8 +25,7 @@ export default function HeroSection() {
         <div className="grid max-w-[25rem] gap-5">
           <LinkStyled
             href="#membership-options"
-            variant="primary"
-            uppercase
+            theme="primary"
             className="group"
           >
             Review Membership Options

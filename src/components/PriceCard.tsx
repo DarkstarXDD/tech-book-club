@@ -1,20 +1,20 @@
 import { twMerge } from "tailwind-merge"
 
 import CheckboxIcon from "./CheckboxIcon"
-import Button from "./Button"
+import LinkStyled from "@/components/LinkStyled"
 
 export default function PriceCard({
   className,
   planName,
   monthlyPrice,
   benefits,
-  buttonText = "Subscribe Now",
+  LinkText = "Subscribe Now",
 }: {
   className?: string
   planName: string
   monthlyPrice: number | string
   benefits: string[]
-  buttonText?: string
+  LinkText?: string
 }) {
   return (
     <div
@@ -51,9 +51,9 @@ export default function PriceCard({
         </ul>
       </div>
 
-      <Button variant="primary" uppercase>
-        {buttonText}
-      </Button>
+      <LinkStyled href="#" theme="primary">
+        {LinkText}
+      </LinkStyled>
     </div>
   )
 }
