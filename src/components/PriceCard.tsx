@@ -6,15 +6,15 @@ import LinkStyled from "@/components/LinkStyled"
 export default function PriceCard({
   className,
   planName,
-  monthlyPrice,
+  price,
   benefits,
-  LinkText = "Subscribe Now",
+  linkText = "Subscribe Now",
 }: {
   className?: string
   planName: string
-  monthlyPrice: number | string
+  price: React.ReactNode
   benefits: string[]
-  LinkText?: string
+  linkText?: string
 }) {
   return (
     <div
@@ -28,14 +28,7 @@ export default function PriceCard({
           {planName}
         </h3>
 
-        <p>
-          <span className="font-martian-mono text-2xl font-semibold leading-snug tracking-tight text-neutral-900">
-            {typeof monthlyPrice === "number"
-              ? `$${monthlyPrice}`
-              : `${monthlyPrice}`}
-          </span>{" "}
-          {typeof monthlyPrice === "number" ? "/month" : null}
-        </p>
+        {price}
 
         <hr className="h-[0.0625rem] border-none bg-neutral-200" />
 
@@ -52,7 +45,7 @@ export default function PriceCard({
       </div>
 
       <LinkStyled href="#" theme="primary">
-        {LinkText}
+        {linkText}
       </LinkStyled>
     </div>
   )

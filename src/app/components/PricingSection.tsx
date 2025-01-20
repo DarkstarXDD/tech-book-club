@@ -12,21 +12,39 @@ export default function PricingSection() {
       <div className="flex flex-col flex-wrap gap-6 md:flex-row md:items-center">
         <PriceCard
           planName="Starter"
-          monthlyPrice={19}
+          price={
+            <p>
+              <span className="font-martian-mono text-2xl font-semibold leading-snug tracking-tight text-neutral-900">
+                $19
+              </span>{" "}
+              /month
+            </p>
+          }
           benefits={["1 book/month", "Online forums"]}
           className="md:flex-1 md:basis-[21.25rem] lg:basis-[17rem]"
         />
         <PriceCard
           planName="Pro"
-          monthlyPrice={29}
+          price={
+            <p>
+              <span className="font-martian-mono text-2xl font-semibold leading-snug tracking-tight text-neutral-900">
+                $29
+              </span>{" "}
+              /month
+            </p>
+          }
           benefits={["2 books/month", "Virtual meetups"]}
           className="bg-neutral-100 bg-[url('/pattern-glow.svg')] bg-no-repeat md:flex-1 md:basis-[21.25rem] lg:basis-[21rem] lg:py-10"
         />
         <PriceCard
           planName="Enterprise"
-          monthlyPrice="Custom"
+          price={
+            <p className="font-martian-mono text-2xl font-semibold leading-snug tracking-tight text-neutral-900">
+              Custom
+            </p>
+          }
           benefits={["Team access", "Private sessions"]}
-          buttonText="Talk to Us"
+          linkText="Talk to Us"
           className="md:flex-1 md:basis-[21.25rem] lg:basis-[17rem]"
         />
       </div>
