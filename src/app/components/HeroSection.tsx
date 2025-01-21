@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 import LinkStyled from "@/components/LinkStyled"
-import StarIcon from "@/components/StarIcon"
+import FiveStarIcons from "@/components/FiveStarIcons"
 import ArrowDownIcon from "@/components/ArrowDownIcon"
 
 import avatars from "@/assets/images/image-avatars.webp"
@@ -9,7 +9,7 @@ import hero from "@/assets/images/image-hero-desktop.webp"
 
 export default function HeroSection() {
   return (
-    <section className="grid w-full justify-items-center gap-16 pb-20 lg:grid-cols-[auto_1fr] lg:items-center">
+    <section className="grid gap-16 pb-20 lg:grid-cols-[auto_1fr] lg:items-center">
       <div className="grid gap-8 lg:max-w-[36rem]">
         <div className="grid gap-6">
           <h1 className="bg-gradient-text bg-clip-text font-martian-mono text-3xl font-bold leading-tight tracking-tighter text-transparent md:text-5xl">
@@ -34,13 +34,7 @@ export default function HeroSection() {
 
           <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
             <Image src={avatars} alt="" className="row-span-2 max-w-28" />
-            <div className="flex items-center justify-center">
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-            </div>
+            <FiveStarIcons />
             <p className="col-start-2 font-martian-mono text-xs leading-tight tracking-tight">
               200+ developers joined already
             </p>

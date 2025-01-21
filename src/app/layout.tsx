@@ -2,6 +2,9 @@ import type { Metadata } from "next"
 import { Inter, Martian_Mono } from "next/font/google"
 import "./globals.css"
 
+import Header from "@/app/components/Header"
+import Footer from "@/app/components/Footer"
+
 export const metadata: Metadata = {
   title: "Tech Book Club",
 
@@ -52,7 +55,15 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${martian_mono.variable} font-inter text-lg font-normal leading-normal tracking-normal text-neutral-700`}
       >
-        {children}
+        <div className="grid justify-items-center gap-16 md:gap-20 lg:gap-[7.5rem]">
+          <div className="px-4 pt-6 md:px-8 md:pt-8 lg:px-12">
+            <div className="grid max-w-[34rem] gap-12 md:max-w-[48rem] md:gap-16 lg:max-w-[73.125rem] lg:gap-20">
+              <Header />
+              {children}
+            </div>
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   )
