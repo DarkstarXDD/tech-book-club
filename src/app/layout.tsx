@@ -58,7 +58,7 @@ export default function RootLayout({
         <div className="grid justify-items-center gap-16 md:gap-20 lg:gap-[7.5rem]">
           <div className="px-4 pt-6 md:px-8 md:pt-8 lg:px-12">
             <div className="grid max-w-[34rem] grid-rows-[repeat(3,auto)] gap-12 md:max-w-[48rem] md:gap-16 lg:max-w-[73.125rem] lg:gap-20">
-              <div className="bg-neutral-900] col-start-1 row-span-2 row-start-1"></div>
+              <div className="col-start-1 row-span-2 row-start-1 bg-neutral-100 bg-[url('/pattern-light-bg.svg')]"></div>
               <Header className="col-start-1 row-span-1 row-start-1" />
               {children}
             </div>
