@@ -4,7 +4,7 @@ import PatternCircle from "@/assets/images/pattern-circle.png"
 
 export default function CommunitySection() {
   return (
-    <section className="grid w-full gap-10 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-20">
+    <section className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-20">
       <div className="grid gap-6 lg:max-w-[34rem]">
         <h2 className="font-martian-mono text-2xl font-semibold leading-snug tracking-tighter text-neutral-900 md:text-4xl lg:max-w-[34rem]">
           Not your average book{" "}

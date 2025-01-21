@@ -1,16 +1,22 @@
+import { twMerge } from "tailwind-merge"
 import Image from "next/image"
 import { FaBluesky } from "react-icons/fa6"
 import { FaLinkedin } from "react-icons/fa"
 
 import LinkStyled from "@/components/LinkStyled"
-import StarIcon from "@/components/StarIcon"
+import FiveStarIcons from "@/components/FiveStarIcons"
 import ArrowUpIcon from "@/components/ArrowUpIcon"
 
 import avatars from "@/assets/images/image-avatars.webp"
 
-export default function Footer() {
+export default function Footer({ className }: { className: string }) {
   return (
-    <footer className="grid w-full justify-items-center rounded-t-2xl bg-neutral-900 bg-[url('/pattern-dark-bg.svg')] px-4 pt-12 text-neutral-100 md:px-8 md:pt-16 lg:pt-20">
+    <footer
+      className={twMerge(
+        "grid w-full justify-items-center rounded-t-2xl bg-neutral-900 bg-[url('/pattern-dark-bg.svg')] px-4 pt-12 text-neutral-100 md:px-8 md:pt-16 lg:pt-20",
+        className
+      )}
+    >
       <div className="grid w-full max-w-[34rem] justify-items-center md:max-w-[48rem] lg:max-w-[73.125rem]">
         <div className="grid max-w-[48rem] justify-items-center gap-10">
           <p className="text-center font-martian-mono text-2xl font-semibold leading-snug tracking-tighter md:text-4xl">
@@ -27,13 +33,7 @@ export default function Footer() {
             </LinkStyled>
             <div className="grid grid-cols-[auto_1fr] items-center justify-items-start gap-x-3 gap-y-1">
               <Image src={avatars} alt="" className="row-span-2 max-w-28" />
-              <div className="flex items-center justify-center">
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
-              </div>
+              <FiveStarIcons />
               <p className="col-start-2 font-martian-mono text-xs leading-tight tracking-tight">
                 200+ developers joined already
               </p>

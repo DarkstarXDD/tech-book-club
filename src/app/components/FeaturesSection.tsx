@@ -5,7 +5,7 @@ import featuresImage from "@/assets/images/image-read-together-desktop.webp"
 
 export default function FeaturesSection() {
   return (
-    <section className="grid w-full gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-20">
+    <section className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-20">
       <div className="grid gap-6 md:gap-[2.125rem] lg:col-start-2 lg:max-w-[34rem]">
         <h2 className="font-martian-mono text-2xl font-semibold leading-snug tracking-tighter text-neutral-900 md:text-4xl lg:max-w-[32rem]">
           Read together, grow together
