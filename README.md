@@ -11,10 +11,9 @@ This is my solution to the [Tech Book Club Landing Page](https://www.frontendmen
 
 #
 
-### Screenshots of the Solution (Desktop & Mobile). 🔍
+### Screenshots of the Solution (Desktop). 🔍
 
 ![](./solution_screenshots/screenshot_desktop.jpeg)
-![](./solution_screenshots/screenshot_mobile.jpeg)
 
 #
 
