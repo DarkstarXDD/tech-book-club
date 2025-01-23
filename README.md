@@ -11,12 +11,6 @@ This is my solution to the [Tech Book Club Landing Page](https://www.frontendmen
 
 #
 
-### Screenshots of the Solution (Desktop). 🔍
-
-![](./solution_screenshots/screenshot_desktop.jpeg)
-
-#
-
 ### Built with. 🔨
 
 - NextJS
@@ -29,6 +23,12 @@ This is my solution to the [Tech Book Club Landing Page](https://www.frontendmen
 ### New Things Learned. 🎓
 
 - First time using NextJS on a project.
+
+#
+
+### Screenshots of the Solution (Desktop). 🔍
+
+![](./solution_screenshots/screenshot_desktop.jpeg)
 
 #
 
