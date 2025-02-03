@@ -1,7 +1,7 @@
 import Image from "next/image"
 import CheckboxIcon from "@/components/CheckboxIcon"
 
-import featuresImage from "@/assets/images/image-read-together-desktop.webp"
+import featuresImage from "../../../public/image-read-together-desktop.webp"
 
 export default function FeaturesSection() {
   return (
@@ -37,6 +37,7 @@ export default function FeaturesSection() {
         src={featuresImage}
         alt="people seated in a circle happily reading books"
         className="rounded-2xl lg:col-start-1 lg:row-start-1"
+        placeholder="blur"
       ></Image>
     </section>
   )

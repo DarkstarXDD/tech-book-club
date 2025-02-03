@@ -5,7 +5,7 @@ import FiveStarIcons from "@/components/FiveStarIcons"
 import ArrowDownIcon from "@/components/ArrowDownIcon"
 
 import avatars from "@/assets/images/image-avatars.webp"
-import hero from "@/assets/images/image-hero-desktop.webp"
+import heroImg from "../../../public/image-hero-desktop.webp"
 
 export default function HeroSection() {
   return (
@@ -43,9 +43,10 @@ export default function HeroSection() {
       </div>
 
       <Image
-        src={hero}
+        src={heroImg}
         alt="Three people looking at the contents of a book inside a library."
         className="rounded-2xl"
+        placeholder="blur"
       />
     </section>
   )

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import communityImage from "@/assets/images/image-not-average-desktop.webp"
+import communityImage from "../../../public/image-not-average-desktop.webp"
 import PatternCircle from "@/assets/images/pattern-circle.png"
 
 export default function CommunitySection() {
@@ -30,6 +30,7 @@ export default function CommunitySection() {
         src={communityImage}
         alt="Old man and two women readings books in a library."
         className="rounded-2xl"
+        placeholder="blur"
       />
     </section>
   )
